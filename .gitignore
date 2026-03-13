@@ -1,0 +1,14 @@
+# Python lixo
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+
+# Docker e VS Code
+.devcontainer/
+# (Opcional) Se não quiser subir as configs do VS Code
+.vscode/
+
+# Logs e Dados de Simulação
+*.log
+results/

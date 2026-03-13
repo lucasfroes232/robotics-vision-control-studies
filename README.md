@@ -54,7 +54,7 @@ Para usar o terminal interativo do livro com todos os imports pré-carregados (n
 ### Scripts de Estudo
 Para rodar scripts específicos na pasta `src/`:
 
-    python3 src/capitulo2_teste.py
+    python3 src/capitulo2/teste.py
 
 ---
 

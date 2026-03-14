@@ -1,72 +1,86 @@
 # Robotics, Vision and Control - Personal Studies 🤖
 
-Repositório dedicado ao estudo e implementação de algoritmos fundamentais de robótica, baseados no livro **"Robotics, Vision and Control: Fundamental Algorithms in Python"** de Peter Corke. O foco é o domínio de cinemática, transformações espaciais e visão computacional utilizando o ecossistema `roboticstoolbox`.
+Repository dedicated to the study and implementation of fundamental robotics algorithms, based on the book **"Robotics, Vision and Control: Fundamental Algorithms in Python"** by Peter Corke. The focus is on mastering kinematics, spatial transformations, and computer vision using the `roboticstoolbox` ecosystem.
 
-## 🚀 Diferencial Técnico: Infraestrutura como Código
-Para garantir a reprodutibilidade e evitar conflitos de dependências (especialmente a incompatibilidade do **NumPy 2.0** com bibliotecas de robótica), este projeto utiliza **Docker** e **VS Code Dev Containers**. 
+## 🚀 Technical Highlight: Infrastructure as Code
+To ensure reproducibility and avoid dependency conflicts (especially the incompatibility of **NumPy 2.0** with robotics libraries), this project uses **Docker** and **VS Code Dev Containers**.
 
-Isso permite que todo o ambiente de desenvolvimento — incluindo drivers de interface gráfica e bibliotecas de sistema — seja provisionado automaticamente, mantendo o sistema host "limpo".
+This allows the entire development environment — including graphical interface drivers and system libraries — to be automatically provisioned, keeping the host system "clean".
 
-### Stack 
-* **OS:** Ubuntu 22.04 (via Docker)
-* **Linguagem:** Python 3.10
-* **Principais Bibliotecas:**
+### Stack
+* **OS:** Ubuntu 22.04 (via Docker)  
+* **Language:** Python 3.10  
+* **Main Libraries:**
   * `roboticstoolbox-python`
   * `spatialmath-python`
-  * `sympy` (Cálculo simbólico)
-  * `numpy < 2.0` (Versão estável para compatibilidade com spatialmath)
+  * `sympy` (Symbolic computation)
+  * `numpy < 2.0` (Stable version for compatibility with spatialmath)
 
 ---
 
-## 🛠️ Como Replicar este Ambiente
+## 🛠️ How to Replicate This Environment
 
-Este projeto foi configurado para ser executado de forma isolada, garantindo que qualquer pessoa consiga rodar os exemplos sem configurar manualmente o Python na máquina local.
+This project was configured to run in an isolated environment, ensuring that anyone can execute the examples without manually configuring Python on their local machine.
 
-### Pré-requisitos
-1. **Docker** instalado e em execução.
+### Prerequisites
+1. **Docker** installed and running.
 2. **Visual Studio Code**.
-3. Extensão **[Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)** da Microsoft instalada no VS Code.
+3. The **Dev Containers** extension installed in VS Code.
 
-### Passo a Passo
-1. **Clone o repositório:**
+### Step by Step
+1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/lucasfroes232/robotics-vision-control-studies.git](https://github.com/lucasfroes232/robotics-vision-control-studies.git)
+   git clone https://github.com/lucasfroes232/robotics-vision-control-studies.git
    cd robotics-vision-control-studies
-2. **Abra no VS Code:**
-    code .
+```
 
-3. **Inicie o Ambiente:**
-   Ao abrir a pasta, o VS Code detectará a configuração. Clique no botão azul no canto inferior esquerdo e selecione:
-   > **Dev Containers: Reopen in Container**
+2. **Open in VS Code:**
 
-4. **Aguarde a Automação:**
-   O Docker irá baixar as imagens, configurar o Ubuntu e instalar todas as dependências automaticamente.
+```bash
+code .
+```
 
----
+3. **Start the Environment:**
+   When opening the folder, VS Code will detect the configuration. Click the blue button in the lower-left corner and select:
 
-## 💻 Como Executar
+> **Dev Containers: Reopen in Container**
 
-### Shell Interativo (RTBTool)
-Para usar o terminal interativo do livro com todos os imports pré-carregados (numpy, roboticstoolbox, spatialmath), rode no terminal do VS Code:
-
-    python3 -m roboticstoolbox.bin.rtbtool
-
-### Scripts de Estudo
-Para rodar scripts específicos na pasta `src/`:
-
-    python3 src/capitulo2/teste.py
+4. **Wait for the Automation:**
+   Docker will download the images, configure Ubuntu, and install all dependencies automatically.
 
 ---
 
-## 📂 Estrutura do Projeto
-* `.devcontainer/`: Definição do ambiente Docker e extensões do VS Code.
-* `src/`: Scripts Python organizados por temas do livro.
-* `.gitignore`: Filtro de arquivos de sistema e cache.
+## 💻 How to Run
+
+### Interactive Shell (RTBTool)
+
+To use the interactive terminal from the book with all imports preloaded (`numpy`, `roboticstoolbox`, `spatialmath`), run in the VS Code terminal:
+
+```bash
+python3 -m roboticstoolbox.bin.rtbtool
+```
+
+### Study Scripts
+
+To run specific scripts in the `src/` folder:
+
+```bash
+python3 src/capitulo2/teste.py
+```
 
 ---
 
-## 👤 Autor
-**Lucas Froes Belinassi** Graduando em Engenharia de Computação pela **UFSCar (São Carlos)**.  
-Pesquisador no **LARIS** (Laboratory of Autonomous Robots and Intelligent Systems).  
-Áreas de interesse: Path Planning, UAVs, SLAM e Robótica Móvel.
+## 📂 Project Structure
 
+* `.devcontainer/`: Definition of the Docker environment and VS Code extensions.
+* `src/`: Python scripts organized by book topics.
+* `.gitignore`: Filter for system and cache files.
+
+---
+
+## 👤 Author
+
+**Lucas Froes Belinassi**  
+Undergraduate student in Computer Engineering at **UFSCar (São Carlos)**.  
+Researcher at **LARIS (Laboratory of Autonomous Robots and Intelligent Systems)**.  
+Research interests: Path Planning, UAVs, SLAM, and Mobile Robotics.
